@@ -1,5 +1,4 @@
 #!/bin/bash
-# Skripti eesmärk: Küsib kasutajalt ees- ja perenime ning tervitab teda.
 
 echo -n "Sisesta oma ees- ja perenimi: "
 read eesnimi perenimi

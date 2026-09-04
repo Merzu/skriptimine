@@ -1,5 +1,4 @@
 #!/bin/bash
-# Skripti eesmärk: Arvutab täidetud busside ja maha jäänud inimeste arvu[cite: 1].
 
 echo -n "Mitu reisijat on grupis: "
 read reisijad

@@ -1,5 +1,4 @@
 #!/bin/bash
-# Skripti eesmärk: Arvutab tordi ja küpsiste mõõtmete põhjal vajaliku pakkide arvu.
 
 echo -n "Sisesta aluskandiku pikkus (cm): "
 read kandik_pikkus
@@ -19,13 +18,12 @@ read kihte
 echo -n "Mitu küpsist on ühes pakis: "
 read kypsiseid_pakis
 
-# Arvutused expr abil
+# Expr 
 pikkusesse=$(expr $kandik_pikkus / $kypsis_pikkus)
 laiusesse=$(expr $kandik_laius / $kypsis_laius)
 kypsiseid_kihis=$(expr $pikkusesse \* $laiusesse)
 kypsised_kokku=$(expr $kypsiseid_kihis \* $kihte)
 
-# Pakkide arvu ülesümardamine expr-iga: (kokku + pakis - 1) / pakis
 pakkide_arv=$(expr \( $kypsised_kokku + $kypsiseid_pakis - 1 \) / $kypsiseid_pakis)
 
 echo "Tordi jaoks on vaja kokku $kypsised_kokku küpsist."

@@ -6,3 +6,4 @@ IFS=';'
 for sona in $tekst; do
     echo "Sõna: $sona"
 done
+

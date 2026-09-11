@@ -14,3 +14,4 @@ while true; do
 
     echo "Sisestati positiivne number: $nr"
 done
+

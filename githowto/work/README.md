@@ -9,8 +9,7 @@ See repositoorium on loodud Tartu Rakendusliku Kolledži (VOCO) eriala "Skriptim
 2. [Õpitud teemad ja kontseptsioonid](#õpitud-teemad-ja-kontseptsioonid)
 3. [Kasutatud Git-käsud ja nende selgitused](#kasutatud-git-käsud-ja-nende-selgitused)
 4. [Kuidas Git'i põhitöövoog toimib](#kuidas-giti-põhitöövoog-toimib)
-5. [Konfliktide lahendamine ja harude liitmine](#konfliktide-lahendamine-ja-harude-liitmine)
-6. [Tehtud ülesannete kontrollnimekiri](#tehtud-ülesannete-kontrollnimekiri)
+
 
 ---
 

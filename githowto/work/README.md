@@ -1,4 +1,4 @@
-# GitHowTo Harjutusprojekt (`work`)
+# GitHowTo harjutusprojekt (`work`)
 
 *Õpi ja praktiseeri Git versioonihaldust ning GitHubi kasutusoskusi.*
 

@@ -1,59 +1,87 @@
-# GitHowTo harjutusprojekt (`work`)
+# 🚀 GitHowTo Harjutusprojekt (`work`)
 
-*Õpi ja praktiseeri Git versioonihaldust ning GitHubi kasutusoskusi.*
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![VOCO](https://img.shields.io/badge/Õppeasutus-VOCO-blue?style=for-the-badge)](https://voco.ee/)
 
-## Tere tulemast!
-
-See repositoorium on loodud Tartu Rakendusliku Kolledži (VOCO) kursuse "Skriptimise alused" raames. Projekti raames läbiti interaktiivne [GitHowTo](https://githowto.com/) juhend, mille eesmärk on anda praktilised oskused Giti ja GitHubi kasutamiseks igapäevases tarkvaraarenduses.
-
-- **Kellele mõeldud:** VOCO õppuritele ja alustavatele tarkvaraarendajatele.
-- **Mida õpid:** Repositooriumide haldamist, harudega töötamist (`branches`), commit'ide tegemist ja liitmisel tekkivate konfliktide lahendamist.
-- **Mida ehitad:** Praktiliselt dokumenteeritud repositooriumi koos korrekti Markdown-vormingus `README.md` failiga.
-- **Eeldused:** Puuduvad. Sobib suurepäraselt esimeseks sissejuhatuseks Giti maailma.
-- **Kestus:** Selle harjutuse läbimiseks kulub umbes 1–2 tundi.
-
-In selle harjutuse käigus teed järgmist:
-1. Algatad kohaliku repositooriumi käsuga `git init`
-2. Lood uue haru ja lülitud sellele käsuga `git switch`
-3. Lisad muudatused vahealasse ning teed commit'i
-4. Liidad harud kokku (`git merge`) ja saadav koodi serverisse (`git push`)
+*Interaktiivse GitHowTo juhendi läbimine ja praktilised harjutused versioonihalduses.*
 
 ---
 
-## 📚 Õpitud teemad ja käsud
+## 📌 Projekti ülevaade
 
-Selle projekti käigus omandati järgmised põhilised versioonihalduse kontseptsioonid ja käsud.
+See repositoorium on loodud Tartu Rakendusliku Kolledži (VOCO) eriala **Skriptimise alused** raames. Projekti eesmärk on omandada praktilised oskused versioonihaldussüsteemi **Git** ja platvormi **GitHub** kasutamisel, läbides interaktiivse [GitHowTo](https://githowto.com/) õpijuhendi sammud.
 
-### 1. Seadistamine ja põhikäsud
-* **Kasutaja seadistamine:** Nime ja e-posti määramine käsuga `git config`.
-* **Oleku kontroll:** Failide staatuse jälgimine käsuga `git status`.
-* **Puhverala (Staging Area):** Muudatuste lisamine vahealasse käsuga `git add`.
-* **Commit'i tegemine:** Muudatuste püsiv salvestamine käsuga `git commit -m "Sõnum"`.
+### 🎯 Kursuse raamistik
+- **Sihtrühm:** Tarkvaraarenduse ja skriptimise aluste õppurid.
+- **Peamine eesmärk:** Õppida koodi versioneerimist, harudega töötamist (`branching`) ning liitmiskonfliktide lahendamist.
+- **Tulemus:** Täielikult dokumenteeritud harjutusprojekt koos puhta koodi ja versiooniajalooga.
+- **Õppematerjal:** [GitHowTo interaktiivne juhend](https://githowto.com/)
 
-### 2. Harudega töötamine ja liitmine
-* **Harude haldus:** Uue haru loomine käsuga `git branch <haru-nimi>`.
-* **Haru vahetamine:** Harude vahel lülitumine käsuga `git switch <haru-nimi>`.
-* **Muudatuste liitmine:** Haru muudatuste koondamine põhiharru käsuga `git merge <haru-nimi>`.
+---
+
+## 🖼️ Töövoo ja harude visualiseerimine
+
+Arendusprotsessi ja harude liitmise visuaalne ülevaade:
+
+![Git töövood ja harud](./images/git-workflow.png)
+
+---
+
+## 📚 Õpitud teemad ja kontseptsioonid
+
+Projekti käigus läbiti ja praktiseeriti järgmisi põhilisi versioonihalduse teemasid:
+
+### 1. Seadistamine ja hoidla algatamine
+* Kasutaja identiteedi määratlemine käsuga `git config`.
+* Uue kohaliku hoidla algatamine käsuga `git init`.
+* Failide oleku kontrollimine ja jälgimine käsuga `git status`.
+
+### 2. Muudatuste salvestamine ja ajalugu
+* Muudatuste suunamine vahealasse (*staging area*) käsuga `git add`.
+* Muudatuste püsiv fikseerimine selgitava sõnumiga käsuga `git commit -m "sõnum"`.
+* Projekti tegevuste ajaloo sirvimine ja analüüsimine käsuga `git log`.
+
+### 3. Harudega töötamine (Branching & Merging)
+* Uute harude loomine isoleeritud arenduseks käsuga `git branch`.
+* Harude vahel lülitumine käsuga `git switch`.
+* Tehtud muudatuste kokkuliitmine põhiharru käsuga `git merge`.
+* Liitmiskonfliktide (*merge conflicts*) tuvastamine ja käsitsi parandamine.
+
+---
+
+## 🛠️ Olulisemate Git-käskude spikker
+
+| Käsk | Kirjeldus | Näide |
+| :--- | :--- | :--- |
+| `git status` | Kuvab tööruumi ja vaheala hetkeseisu | `git status` |
+| `git add` | Lisab faili(d) vahealasse | `git add README.md` |
+| `git commit` | Salvestab vaheala muudatused ajalukku | `git commit -m "Lisa funktsioon"` |
+| `git log` | Kuvab tihendatud commit'ide ajaloo | `git log --oneline --graph` |
+| `git switch` | Lülitub teisele harusse või loob uue | `git switch -c uus-haru` |
+| `git merge` | Liidab valitud haru aktiivsesse harusse | `git merge uus-haru` |
 
 ---
 
 ## 💻 Kuidas Git'i põhitöövoog toimib
 
-Tüüpiline igapäevane töövoog uue funktsionaalsuse ehitamisel:
+Tüüpiline igapäevane töövoog uue funktsionaalsuse ehitamisel ja serverisse saatmisel:
 
 ```bash
-# 1. Loo uus haru ja lülitu sellele
-git switch -c uus-funktsioon
-
-# 2. Tee muudatused ning lisa need vahealasse
-git add .
-
-# 3. Salvesta muudatused kohalikku ajalukku
-git commit -m "Lisa uus funktsionaalsus"
-
-# 4. Lülitu tagasi põhiharru ja liida muudatused
+# 1. Veendu, et oled põhiharus ning laadi viimased muudatused
 git switch main
-git merge uus-funktsioon
+git pull origin main
 
-# 5. Saada muudatused GitHubi kaugserverisse
+# 2. Loo uus haru funktsiooni jaoks ja lülitu sellele
+git switch -c funktsioon/uus-leht
+
+# 3. Tee koodimuudatused, lisa need vahealasse ja tee commit
+git add .
+git commit -m "Lisa uue lehe dokumentatsioon"
+
+# 4. Lülitu tagasi põhiharru ja liida tehtud töö
+git switch main
+git merge funktsioon/uus-leht
+
+# 5. Saada uuendatud põhiharu GitHubi kaughoidlasse
 git push origin main

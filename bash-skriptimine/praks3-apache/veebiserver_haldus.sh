@@ -16,7 +16,7 @@ LOPP='\033[0m'
 PAKK=""
 TEENUS=""
 
-# Kontrollib, kas pakk on paigaldatud (0 või 1)
+# Kontrollib, kas on paigaldatud.
 on_paigaldatud() {
     dpkg-query -W -f='${Status}' "$PAKK" 2>/dev/null | grep -c 'ok installed'
 }
